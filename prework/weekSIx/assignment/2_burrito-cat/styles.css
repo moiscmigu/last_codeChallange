@@ -1,0 +1,25 @@
+body {
+  font-family: Verdana, Arial, Sans-Serif;
+}
+.navDiv {
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  padding-top: 10px;
+  margin: 5px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #69D2E7;
+  font-family: Verdana, Arial, Sans-Serif;
+  display: inline-block;
+}
+
+#outPut {
+  height: 200px;
+  width: 400px;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
