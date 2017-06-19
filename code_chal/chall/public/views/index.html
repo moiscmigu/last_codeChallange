@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mongoose Intro</title>
+        <meta charset="utf-8">
+        <title>giphy peer</title>
+        <script src="vendors/angular.min.js" charset="utf-8"></script>
+
+        <script src="scripts/script.js" charset="utf-8"></script>
+        <script src="views/services/myService.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body ng-app='myApp'>
+        <h1>Message board</h1>
+        <div class="container-fluid" ng-controller='DefaultController as dc' ng-init='dc.seeMessage()'>
+            <input type="text" placeholder="Enter Name" ng-model='dc.nameInput'>
+            <input type="text" placeholder="Enter Message"  ng-model='dc.messageInput'>
+            <button type="button" name="button" ng-click='dc.sendMessage()'>Send</button>
+            <div class="data" ng-repeat = 'message in dc.data'>
+                <p>Name: {{message.name}}</p>
+                <p>Message:{{message.message}}</p>
+                <hr/>
+            </div>
+
+        </div>
+
+    </body>
+</html>
